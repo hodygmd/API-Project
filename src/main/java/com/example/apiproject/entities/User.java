@@ -7,14 +7,14 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "distance_unit")
-public class DistanceUnit {
+@Table(name = "user")
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
-    @Column(name = "unit")
-    private String unit;
-    @Column(name = "status")
-    private Byte status;
+    @Column(name = "username")
+    private String username;
+    @Column(name = "pass")
+    private String pass;
 }
